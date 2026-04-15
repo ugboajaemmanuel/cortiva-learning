@@ -1,11 +1,10 @@
-const clientName = "Acme Corp"  //
-const projectCount = 5  //
-const hourlyRate = 150.50   //
-const isActive = true   //
-const unpaidInvoice = null  //
+let clientName = "Kelvin"
+let projectBudget = 500000
+let agencyCommission = 0.15
 
-console.log(clientName)
-console.log(projectCount)
-console.log(hourlyRate)
-console.log(isActive)
-console.log(unpaidInvoice)
+let commissionAmount = projectBudget * agencyCommission
+let agencyProfit = projectBudget - commissionAmount
+let projectsummary = `Our new client ${clientName} gave us a work that costs ${projectBudget.toFixed(2)} and our company profit will be ${agencyProfit.toFixed(2)}`
+
+console.log(agencyProfit.toFixed(2))
+console.log(projectsummary)
